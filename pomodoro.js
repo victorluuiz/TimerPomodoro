@@ -103,12 +103,17 @@ function timer() {
     if (hh == 0 && mm == 0 && ss == 0) {
         stop();
     }
+
+     //Cria uma variável com o valor tratado HH:MM:SS
+     var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+
       //Insere o valor tratado no elemento counter
       if (tarefa == 0) {
         document.getElementById('counter').innerText = format;
     } else {
         document.getElementById('counter1').innerText = format;
     }
+    
 
 }
 
