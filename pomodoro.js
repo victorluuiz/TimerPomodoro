@@ -18,10 +18,12 @@ function start() {
     if (mm < 0) {
         mm = controle;
         ss = 0;
-    }
-    temp = setInterval(() => { timer(); }, tempo);
-    document.getElementById("iniciar").disabled = true;
+    } else {
+        temp = setInterval(() => { timer(); }, tempo);
 
+        document.getElementById("iniciar").disabled = true;
+        document.getElementById("iniciar1").disabled = true;
+    }
 }
 
 
