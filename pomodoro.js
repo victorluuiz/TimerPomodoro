@@ -39,7 +39,7 @@ function pause() {
 }
 
 function stop() {
-    if (tarefa == 0) {  
+    if (tarefa == 0) {
         if (contador < 4) {
             hh = 0;
             mm = 5;
@@ -72,7 +72,7 @@ function stop() {
         tarefa = 1;
 
         document.getElementById('counter').innerText = "00:00:00";
-    } 
+    }
 }
 
 //Faz a contagem do tempo e exibição
@@ -101,6 +101,11 @@ function timer() {
             window.alert("Hora da tarefa!");
         }
     }
+
+    if (hh == 0 && mm == 0 && ss == 0) {
+        stop();
+    }
+    
 }
 
 function carrega() {
