@@ -14,7 +14,7 @@ var notification2 = new Audio('https://d9olupt5igjta.cloudfront.net/samples/samp
 //1 --> Pausa
 var tarefa = 0;
 
-while (isNaN(mm) == true){    
+while (isNaN(mm) == true || mm < 0){    
     var mm = window.prompt("O valor inserido não é um número. Quantos minutos o timer terá?");
 }
 
