@@ -103,7 +103,13 @@ function timer() {
     if (hh == 0 && mm == 0 && ss == 0) {
         stop();
     }
-    
+      //Insere o valor tratado no elemento counter
+      if (tarefa == 0) {
+        document.getElementById('counter').innerText = format;
+    } else {
+        document.getElementById('counter1').innerText = format;
+    }
+
 }
 
 function carrega() {
