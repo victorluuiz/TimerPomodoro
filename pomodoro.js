@@ -86,9 +86,7 @@ function timer() {
         else {
             ss--;
         }
-        if (mm == 0 && ss == 0) {
-            alt = 0;
-        }
+    
     }
     if (hh == 0 && mm == 0 && ss == 0) {
 
