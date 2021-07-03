@@ -73,6 +73,14 @@ function stop() {
         tarefa = 1;
 
         document.getElementById('counter').innerText = "00:00:00";
+    } else {
+
+        hh = 0;
+        mm = controle;
+        ss = 0;
+
+        tarefa = 0;
+        document.getElementById('counter').innerText = "00:00:00";
     }
 }
 
