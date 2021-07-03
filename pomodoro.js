@@ -70,6 +70,9 @@ function timer() {
         }
     }
 }
+function carrega() {
+
+}
 
 function finish() {
     clearInterval(temp);
