@@ -60,3 +60,8 @@ function timer() {
         }
     }
 }
+
+function finish() {
+    clearInterval(temp);
+    document.getElementById("encerrar").disabled = true;
+}
