@@ -32,7 +32,7 @@ function stop() {
     clearInterval(temp);
     hh = 0;
     mm = 25;
-    ss = 1;
+    ss = 0;
 
     document.getElementById('counter').innerText = '00:25:00';
     if (document.getElementById("iniciar").disabled = true) {
