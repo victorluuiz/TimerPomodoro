@@ -79,6 +79,14 @@ function stop() {
         mm = controle;
         ss = 0;
 
+        document.getElementById("iniciar").disabled = false;
+        document.getElementById("pausar").disabled = false;
+        document.getElementById("parar").disabled = false;
+
+        document.getElementById("iniciar1").disabled = true;
+        document.getElementById("pausar1").disabled = true;
+        document.getElementById("parar1").disabled = true;
+        
         tarefa = 0;
         document.getElementById('counter').innerText = "00:00:00";
     }
