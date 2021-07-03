@@ -1,4 +1,4 @@
-# TimerPomodoro
+# Timer Pomodoro
 Desafio para processo seletivo em estágio na Jera Academy.
 
 # Qual será a atividade desenvolvida pelo aluno?
