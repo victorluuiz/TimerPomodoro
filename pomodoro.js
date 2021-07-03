@@ -1,7 +1,7 @@
 "use strict"
 
 var hh = 0;
-var mm = 25;
+var mm = window.prompt("Quantos minutos o timer terá?");
 var ss = 0;
 var alt = 1;
 var tempo = 1000;
