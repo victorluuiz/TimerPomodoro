@@ -69,4 +69,7 @@ function timer() {
 function finish() {
     clearInterval(temp);
     document.getElementById("encerrar").disabled = true;
+    document.getElementById("iniciar").disabled = true;
+    document.getElementById("pausar").disabled = true;
+    document.getElementById("parar").disabled = true;
 }
