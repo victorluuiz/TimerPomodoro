@@ -30,6 +30,9 @@ function pause() {
     if (document.getElementById("iniciar").disabled = true) {
         document.getElementById("iniciar").disabled = false;
     }
+    if (document.getElementById("iniciar1").disabled = true) {
+        document.getElementById("iniciar1").disabled = false;
+    }
 }
 
 function stop() {
