@@ -53,7 +53,7 @@ function stop() {
             ss = 0;
         }
         if (contador == 4) {
-            var pergunta = window.prompt("Você já fez 4 Pomodoros! Quer descansar por 10 minutos?");
+            var pergunta = window.prompt("Você já fez 4 Pomodoros! Quer descansar por 10 minutos? S - Sim N - Não");
         } if (pergunta == "S") {
             hh = 0;
             mm = 10;
