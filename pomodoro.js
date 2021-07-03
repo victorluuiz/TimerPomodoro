@@ -71,8 +71,9 @@ function timer() {
     }
 }
 function carrega() {
-    
+
     var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+    return format;
 }
 
 function finish() {
