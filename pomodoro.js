@@ -89,5 +89,8 @@ function finish() {
     document.getElementById("iniciar").disabled = true;
     document.getElementById("pausar").disabled = true;
     document.getElementById("parar").disabled = true;
+    document.getElementById("iniciar1").disabled = true;
+    document.getElementById("pausar1").disabled = true;
+    document.getElementById("parar1").disabled = true;
     window.alert("Você terminou a contagem. A sua quantidade de pomodoros foi: " + contador);
 }
