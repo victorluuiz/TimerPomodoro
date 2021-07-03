@@ -14,6 +14,10 @@ var notification2 = new Audio('https://d9olupt5igjta.cloudfront.net/samples/samp
 //1 --> Pausa
 var tarefa = 0;
 
+while (isNaN(mm) == true){    
+    var mm = window.prompt("O valor inserido não é um número. Quantos minutos o timer terá?");
+}
+
 //Inicia o temporizador
 function start() {
     if (mm < 0) {
@@ -40,6 +44,8 @@ function pause() {
 
 //Interrompe a contagem do tempo
 function stop() {
+    clearInterval(temp);
+    
     if (tarefa == 0) {
         if (contador < 4) {
             hh = 0;
@@ -86,10 +92,11 @@ function stop() {
         document.getElementById("iniciar1").disabled = true;
         document.getElementById("pausar1").disabled = true;
         document.getElementById("parar1").disabled = true;
-        
+
         tarefa = 0;
         document.getElementById('counter').innerText = "00:00:00";
     }
+
 }
 
 //Faz a contagem do tempo e exibição
@@ -103,17 +110,16 @@ function timer() {
         else {
             ss--;
         }
+        if (hh == 0 && mm == 0 && ss == 0) {
 
-    }
-    if (hh == 0 && mm == 0 && ss == 0) {
-
-        notification.loop = false;
-        notification.play();
-        if (tarefa == 0) {
-            window.alert("Hora do intervalo!");
-            contador++;
-        } else {
-            window.alert("Hora da tarefa!");
+            notification.loop = false;
+            notification.play();
+            if (tarefa == 0) {
+                window.alert("Hora do intervalo!");
+                contador++;
+            } else {
+                window.alert("Hora da tarefa!");
+            }
         }
     }
 
@@ -130,6 +136,8 @@ function timer() {
     } else {
         document.getElementById('counter1').innerText = format;
     }
+
+    document.getElementById('tasks').innerText = contador;
 
 
 }
