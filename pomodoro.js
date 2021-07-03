@@ -14,8 +14,8 @@ var notification2 = new Audio('https://d9olupt5igjta.cloudfront.net/samples/samp
 //1 --> Pausa
 var tarefa = 0;
 
-while (isNaN(mm) == true || mm < 0){    
-    var mm = window.prompt("O valor inserido não é um número. Quantos minutos o timer terá?");
+while (isNaN(mm) == true || mm < 0) {
+    var mm = window.prompt("O valor inserido é inválido. Quantos minutos o timer terá?");
 }
 
 //Inicia o temporizador
@@ -45,7 +45,7 @@ function pause() {
 //Interrompe a contagem do tempo
 function stop() {
     clearInterval(temp);
-    
+
     if (tarefa == 0) {
         if (contador < 4) {
             hh = 0;
