@@ -15,6 +15,10 @@ var tarefa = 0;
 
 //Inicia o temporizador
 function start() {
+    if (mm < 0) {
+        mm = controle;
+        ss = 0;
+    }
     temp = setInterval(() => { timer(); }, tempo);
     document.getElementById("iniciar").disabled = true;
 
