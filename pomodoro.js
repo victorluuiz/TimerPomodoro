@@ -34,7 +34,7 @@ function pause() {
     }
     if (document.getElementById("iniciar1").disabled = true) {
         document.getElementById("iniciar1").disabled = false;
-    }   
+    }
 }
 
 function stop() {
@@ -64,29 +64,31 @@ function timer() {
             alt = 0;
         }
     }
-    if (alt == 0) {
-        mm == 25;
-        if (ss == 0) {
-            ss = 59; bn
-            mm--;
-        }
-        else {
-            ss--;
+    if (hh == 0 && mm == 0 && ss == 0) {
+
+        notification.loop = false;
+        notification.play();
+        if (tarefa == 0) {
+            window.alert("Hora do intervalo!");
+            contador++;
+        } else {
+            window.alert("Hora da tarefa!");
         }
     }
 }
+
 function carrega() {
 
     var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
 
-     //Insere o valor tratado no elemento counter
-     document.getElementById('counter').innerText = format;
+    //Insere o valor tratado no elemento counter
+    document.getElementById('counter').innerText = format;
 
-     //Insere o valor do contador no elemento tasks
-     document.getElementById('tasks').innerText = contador; 
+    //Insere o valor do contador no elemento tasks
+    document.getElementById('tasks').innerText = contador;
 
     return format;
-}   
+}
 
 function finish() {
     notification2.loop = false;
