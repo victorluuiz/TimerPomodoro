@@ -34,7 +34,7 @@ function pause() {
     }
     if (document.getElementById("iniciar1").disabled = true) {
         document.getElementById("iniciar1").disabled = false;
-    }
+    }   
 }
 
 function stop() {
@@ -79,12 +79,15 @@ function carrega() {
 
     var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
     return format;
-}
+}   
 
 function finish() {
+    notification2.loop = false;
+    notification2.play();
     clearInterval(temp);
     document.getElementById("encerrar").disabled = true;
     document.getElementById("iniciar").disabled = true;
     document.getElementById("pausar").disabled = true;
     document.getElementById("parar").disabled = true;
+    window.alert("Você terminou a contagem. A sua quantidade de pomodoros foi: " + contador);
 }
