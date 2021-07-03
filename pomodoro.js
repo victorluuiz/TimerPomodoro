@@ -7,6 +7,11 @@ var alt = 1;
 var tempo = 1000;
 var temp;
 
+
+//0 --> Tarefa
+//1 --> Pausa
+var tarefa = 0;
+
 //Inicia o temporizador
 function start() {
     temp = setInterval(() => { timer(); }, tempo);
