@@ -61,7 +61,18 @@ function stop() {
             mm = 5;
             ss = 0;
         }
-    }
+        document.getElementById("iniciar").disabled = true;
+        document.getElementById("pausar").disabled = true;
+        document.getElementById("parar").disabled = true;
+
+        document.getElementById("iniciar1").disabled = false;
+        document.getElementById("pausar1").disabled = false;
+        document.getElementById("parar1").disabled = false;
+
+        tarefa = 1;
+
+        document.getElementById('counter').innerText = "00:00:00";
+    } 
 }
 
 //Faz a contagem do tempo e exibição
